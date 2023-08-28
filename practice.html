@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h2 class="heading">Calculator</h2>
+        <form>
+
+            <div class="firstInput">
+                <input type="number" id="firstNumber" placeholder="Enter Number">
+
+            </div>
+            <div class="secondInput">
+                <input type="number" id="secondNumber" class="form-control" placeholder="Enter Number">
+
+            </div>
+            <h2 class="heading">Operations</h2>
+            <button type="submit" onclick="addition()" class="add-btn">Addition</button>
+            <button type="submit" onclick="sub()" class="sub-btn">subraction</button>
+            <button type="submit" onclick="mul()" class="mul-btn">Multiplication</button>
+            <button type="submit" onclick="division()" class="div-btn">Division</button>
+            <button type="submit" onclick="modulo()" class="mod-btn">modulo</button>
+
+
+        </form>
+
+    </div>
+
+    </div>
+    <script>
+        function addition() {
+            let addnum1 = Number(document.getElementById("firstNumber").value);
+            let addnum2 = Number(document.getElementById("secondNumber").value);
+            let add = addnum1 + addnum2;
+            console.log(add);
+
+        }
+        function sub() {
+            let subnum1 = Number(document.getElementById("firstNumber").value);
+            let subdnum2 = Number(document.getElementById("secondNumber").value);
+            let sub = subnum1 - subdnum2;
+            console.log(sub);
+
+        } function mul() {
+            let mulnum1 = Number(document.getElementById("firstNumber").value);
+            let mulnum2 = Number(document.getElementById("secondNumber").value);
+            let mull = mulnum1 * mulnum2;
+            console.log(mull);
+
+        } function division() {
+            let divnum1 = Number(document.getElementById("firstNumber").value);
+            let divnum2 = Number(document.getElementById("secondNumber").value);
+            let division = divnum1 / divnum2;
+            console.log(division);
+
+        } function modulo() {
+            let modnum1 = Number(document.getElementById("firstNumber").value);
+            let modnum2 = Number(document.getElementById("secondNumber").value);
+            let modulus = modnum1 % modnum2;
+            console.log(modulus);
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
